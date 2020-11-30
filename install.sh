@@ -32,4 +32,4 @@ sudo echo "www-data ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 sudo service apache2 restart
 
-# Then go to the web page on your local network - http://PI-IP/index.php
+# Then go to the web page on your local network - http://raspberrypi.local/index.php - or whatever it is
