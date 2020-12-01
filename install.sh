@@ -33,3 +33,7 @@ sudo echo "www-data ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 sudo service apache2 restart
 
 # Then go to the web page on your local network - http://raspberrypi.local/index.php - or whatever it is
+
+# Optional - Have the Pi start with a particular Star pattern -
+
+sudo sh -c 'echo "@reboot /usr/bin/python3 /home/pi/Programmable-Christmas-Star/random_leds.py" >> /var/spool/cron/crontabs/pi'
